@@ -1,9 +1,13 @@
-# Novas-Auto-Verus-Miner
+
+
+
+
+
+# Novas Auto Verus Miner For Termux
+Note
+  "Novas Auto Verus Miner /auto-verus-miner-termux -In Beta Since 8/7/2025                           - Project Started 8/7/2025 6:37 pm is a work in progress User Friendly Automated Advanced Verus Miner not just any Miner the Very Best for Termux!"
 
 # The most advanced, fully automated Verus Miner setup for Termux.
-
-Novas Auto Verus Miner /auto-verus-miner-termux -In Beta Since 8/7/2025                           - Project Started 8/7/2025 6:37 pm is a work in progress User friendly Automated Advanced Verus Miner not just any miner the very best! 
-
 
 ## Features
 
@@ -25,6 +29,6 @@ Novas Auto Verus Miner /auto-verus-miner-termux -In Beta Since 8/7/2025         
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/MrNova420/Novas-Auto-verus-miner.git
+git clone https://github.com/YOUR_USERNAME/auto-verus-miner-termux.git
 cd auto-verus-miner-termux
 chmod +x *.sh modules/*.sh utils/*.sh
