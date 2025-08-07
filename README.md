@@ -25,6 +25,6 @@ Novas Auto Verus Miner /auto-verus-miner-termux -In Beta Since 8/7/2025         
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/auto-verus-miner-termux.git
+git clone https://github.com/MrNova420/Novas-Auto-verus-miner.git
 cd auto-verus-miner-termux
 chmod +x *.sh modules/*.sh utils/*.sh
