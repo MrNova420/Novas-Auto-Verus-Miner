@@ -42,22 +42,3 @@ Disclaimer
 Mining cryptocurrencies can consume significant device resources and power.
 Use Any Miner at your own risk. This project is provided as-is with no guarantees. but once either is in stable version or complete will add protections and or health and device monitrors
 
-
----
-
-## . start.sh
-
-```bash
-#!/data/data/com.termux/files/usr/bin/bash
-source utils/colors.sh
-
-echo -e "${GREEN}Welcome to the Auto Verus Miner Termux Setup!${RESET}"
-
-bash modules/checks.sh || { echo -e "${RED}System checks failed. Exiting.${RESET}"; exit 1; }
-bash modules/wallet_setup.sh || { echo -e "${RED}Wallet setup failed. Exiting.${RESET}"; exit 1; }
-bash modules/pool_setup.sh || { echo -e "${RED}Pool setup failed. Exiting.${RESET}"; exit 1; }
-bash modules/performance.sh || { echo -e "${RED}Performance setup failed. Exiting.${RESET}"; exit 1; }
-bash modules/miner_setup.sh || { echo -e "${RED}Miner setup failed. Exiting.${RESET}"; exit 1; }
-
-echo -e "${GREEN}✅ Setup complete! You can now start mining with ./miner.sh${RESET}"
-
