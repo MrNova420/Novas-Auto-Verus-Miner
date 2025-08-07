@@ -27,3 +27,17 @@ Note
 git clone https://github.com/YOUR_USERNAME/auto-verus-miner-termux.git
 cd auto-verus-miner-termux
 chmod +x *.sh modules/*.sh utils/*.sh
+
+2. Run the setup:
+                  ./start.sh
+
+3. After setup completes, start mining with:
+
+./miner.sh
+
+Updating Miner
+To update the miner and scripts later, simply run:
+
+Disclaimer
+Mining cryptocurrencies can consume significant device resources and power.
+Use Any Miner at your own risk. This project is provided as-is with no guarantees. but once either is in stable version or complete will add protections and or health and device monitrors 
