@@ -1,25 +1,22 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-# Load colors
 source utils/colors.sh
 
-# Welcome message
-echo -e "${GREEN}Welcome to Auto Verus Miner Setup for Termux!${RESET}"
+echo -e "${GREEN}Welcome to Auto Verus Miner Termux Setup!${RESET}"
 
 # Run system checks
-bash modules/checks.sh
+bash modules/checks.sh || { echo -e "${RED}System checks failed. Exiting.${RESET}"; exit 1; }
 
-# Run wallet setup
-bash modules/wallet_setup.sh
+# Wallet setup
+bash modules/wallet_setup.sh || { echo -e "${RED}Wallet setup failed. Exiting.${RESET}"; exit 1; }
 
-# Run pool setup
-bash modules/pool_setup.sh
+# Pool setup
+bash modules/pool_setup.sh || { echo -e "${RED}Pool setup failed. Exiting.${RESET}"; exit 1; }
 
-# Run performance tweaks
-bash modules/performance.sh
+# Performance tuning
+bash modules/performance.sh || { echo -e "${RED}Performance setup failed. Exiting.${RESET}"; exit 1; }
 
-# Run miner setup
-bash modules/miner_setup.sh
+# Miner setup (build/download)
+bash modules/miner_setup.sh || { echo -e "${RED}Miner setup failed. Exiting.${RESET}"; exit 1; }
 
-# Finished
-echo -e "${GREEN}All done! Verus miner setup complete.${RESET}"
+echo -e "${GREEN}Setup complete! You can now start mining with ./miner.sh${RESET}"
