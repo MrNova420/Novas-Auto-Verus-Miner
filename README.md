@@ -2,43 +2,38 @@
 Note
   "Novas Auto Verus Miner /auto-verus-miner-termux -In Beta Since 8/7/2025                           - Project Started 8/7/2025 6:37 pm is a work in progress User Friendly Automated Advanced Verus Miner not just any Miner the Very Best for Termux!"
 
-# The most advanced, fully automated Verus Miner setup for Termux.
+
+#The most advanced, fully automated Verus Miner setup for Termux.
+
+---
 
 ## Features
 
-- Automatic dependency installation and environment checks
-- Secure wallet and mining pool setup with validation and saved config
-- Dynamic CPU thread detection and miner performance tuning
-- Clone, build, and update latest cpuminer-verus miner automatically
-- User-friendly interactive menu and color-coded output
-- Fully modular scripts for easy maintenance
-- Logs and configs saved in dedicated folders
+- One-command full setup: wallet, pool, miner, and performance config
+- Automatic dependency installation and system checks
+- Secure wallet and mining pool setup with input validation
+- Smart CPU thread detection and miner optimization
+- Clones & builds the latest high-performance cpuminer-verus
+- Configs and logs saved persistently in `config/` and `logs/`
+- User-friendly interactive prompts with color-coded feedback
+- Auto-update and miner rebuild support
+
+---
 
 ## Requirements
 
 - Termux (latest version recommended)
-- Internet connection
+- Android 7+ device
+- Internet access
 
-## Installation and Usage
+---
+
+## Installation & Usage
 
 1. Clone this repository:
 
 ```bash
+pkg update && pkg install -y git
 git clone https://github.com/YOUR_USERNAME/auto-verus-miner-termux.git
 cd auto-verus-miner-termux
 chmod +x *.sh modules/*.sh utils/*.sh
-
-2. Run the setup:
-                  ./start.sh
-
-3. After setup completes, start mining with:
-
-./miner.sh
-
-Updating Miner
-To update the miner and scripts later, simply run:
-
-Disclaimer
-Mining cryptocurrencies can consume significant device resources and power.
-Use Any Miner at your own risk. This project is provided as-is with no guarantees. but once either is in stable version or complete will add protections and or health and device monitrors
-
